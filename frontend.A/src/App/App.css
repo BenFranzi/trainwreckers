@@ -1,0 +1,212 @@
+  ::-webkit-scrollbar {
+  width: 30px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgba(255,255,255,0.87);
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#App {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: 50px auto 20px;
+  grid-template-columns: 74px auto;
+  height: 100%;
+  width: 100%;
+  font-size: 10pt;
+}
+
+#App .header {
+  color: #ffffff;
+}
+
+#App .logoPane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#App .logoPane a {
+  font-size: 2em;
+  font-style: italic;
+  font-family: Courier;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(232,232,82) !important;
+}
+
+#App .sidePane {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+#App .footerPane {
+  grid-row-start: 3;
+  text-align: center;
+  font-size: 0.8em;
+  color: #888;
+}
+
+#App .mainPane {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  overflow: auto;
+}
+
+#App .mainPane .container {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#App .topBar {
+  height: 50px;
+  font-size: 1.5em;
+  padding: 0px 1em;
+}
+
+#App .topBar, #App .container > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#App .topBar .weather {
+  font-size: 0.9em;
+}
+
+#App .pane, #App .segment {
+  background-color: #313131;
+  position: relative;
+}
+
+#App .pane .menu a.item:last-of-type {
+  position: absolute;
+}
+
+#App .pane .menu {
+  background: transparent;
+}
+
+#App .pane .menu .active {
+  background-color: #222222;
+}
+
+#App .mainPane .UserSummary .segment {
+  margin: 1em;
+  width: 30%;
+  float: left;
+}
+
+#App .mainPane .DashboardScreen {
+  height: calc(100% - 50px);
+}
+
+#App .mainPane .DashboardScreen .view {
+  float: left;
+  height: 100%;
+}
+
+#App .mainPane .DashboardScreen .view.left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#App .mainPane .DashboardScreen .view.right {
+  width: 60%;
+  background-color: #444;
+  padding: 0px;
+}
+
+#App .mainPane .DashboardScreen .view.right .snapshot {
+  height: 65%;
+}
+
+#App .mainPane .DashboardScreen .view.right .snapshot img {
+  background-color: #d1d1d1;
+  width: 100%;
+  height: 100%;
+}
+
+#App .mainPane .DashboardScreen .view.right .history {
+  height: 35%;
+  overflow: auto;
+}
+
+#App .mainPane .DashboardScreen .view.right .history td {
+  padding-left: 5px;
+}
+#App .mainPane .DashboardScreen .view.right .history tr:not(.warning) {
+  color: white;
+}
+
+#App .mainPane .DashboardScreen .view.left .nameplate {
+  padding: 20px 20px 35px 50px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+}
+
+#App .mainPane .DashboardScreen .view.left .nameplate h4 {
+  margin: -10px 0 0 2px;
+  position: relative;
+}
+
+#App .mainPane .DashboardScreen .view.left .nameplate h4 .icon {
+  position: absolute;
+  left: -25px;
+}
+
+#App .mainPane .DashboardScreen .view.left .status {
+  flex-grow: 4;
+  padding: 2em 4em;
+}
+
+#App .mainPane .DashboardScreen .view.left .overrides {
+  padding-bottom: 100px;
+}
+
+#App .mainPane.admin {
+  background-color: #305161;
+}
+
+
+/*#App a {
+  color: rgba(232,232,0,0.70) !important;
+}
+
+#App a:hover {
+  color: rgb(232,232,82) !important;
+}*/
+
+#App .pane .menu .item {
+  color: rgba(255,255,255,1) !important;
+}
+
+#App .pane .menu .item:hover {
+  color: rgba(232,232,0,0.70) !important;
+}
+
+#App .ui label,
+#App .ui.divider {
+  color: white !important;
+}
+
+#App .space-between {
+  display: flex;
+  justify-content: 
+}
